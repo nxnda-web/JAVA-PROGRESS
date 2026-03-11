@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class gradecal {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter your maths mark: ");
+        Double Math = input.nextDouble();
+
+
+        System.out.println("Enter your Eng mark: ");
+        Double Eng = input.nextDouble();
+
+
+        System.out.println("Enter your Sci mark: ");
+        Double Sci = input.nextDouble();
+
+
+        System.out.println("Enter your Soc mark: ");
+        Double Soc = input.nextDouble();
+
+
+        System.out.println("Enter your Tamil mark: ");
+        Double Tamil = input.nextDouble();
+
+
+        System.out.println("Your maths mark : " + Math);
+        System.out.println("Your eng mark : " + Eng);
+        System.out.println("Your Sci mark : " + Sci);
+        System.out.println("Your Soc mark : " + Soc);
+        System.out.println("Your tamil mark : " + Tamil);
+
+        Double Total = ( Math + Eng + Sci + Soc + Tamil ) / 500 ;
+
+        Total = (Total * 100) ;
+
+        System.out.println("Your total percentage : " + Total +"%");
+
+        if ( Total > 90 && Total < 100 ) {
+            System.out.println("Your garde is : A " );
+        }
+        else if (Total > 80 && Total < 90) {
+            System.out.println("Your garde is : B " );
+        }
+        else if (Total > 70 && Total < 80) {
+            System.out.println("Your garde is : C " );
+        }
+        else if (Total > 60 && Total < 70) {
+            System.out.println("Your garde is : D " );
+        }
+        else if (Total > 50 && Total < 60) {
+            System.out.println("Your garde is : E " );
+        }
+        else if (Total > 0 && Total < 50) {
+            System.out.println("Your garde is : F " );
+        }
+
+    }
+}
