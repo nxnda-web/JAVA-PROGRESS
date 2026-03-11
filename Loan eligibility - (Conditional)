@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class loaneligiblity {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("What is your age : ");
+        int AGE = input.nextInt();
+
+        if (( AGE > 50 ) && (AGE < 80 )) {
+            
+            System.out.println("Your are eligible");
+            
+            System.out.println("Enter your SALARY : ");
+            Double Salary = input.nextDouble();
+
+            if (( Salary >= 10000 ) && (AGE <= 25000 )) {
+                System.out.println("Your are eligible");
+
+                System.out.println("Enter your Score : ");
+                Double Score = input.nextDouble();
+
+                if (( Score > 600 ) && (AGE <= 700 )) {
+                    System.out.println("Your are eligible for 2l");
+                }
+                else {
+                    System.out.println("Your are not eligible");
+                }
+
+            }
+            else {
+                System.out.println("Your are not eligible");
+            }
+        }
+            
+        else {
+            System.out.println("Your are not eligible");
+        }
+    }
+}
