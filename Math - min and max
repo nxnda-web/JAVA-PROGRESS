@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Mathminandmax {
+	public static void main (String args[]){
+
+		Scanner in = new Scanner (System.in);
+
+		int i1 = in.nextInt();
+		int i2 = in.nextInt();
+
+		int min = Math.min(i1,i2);
+		int max = Math.max(i1,i2);
+
+		System.out.println("The min value: " + min);
+		System.out.println("The max value: " + max);
+	}
+}
