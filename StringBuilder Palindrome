@@ -1,0 +1,16 @@
+public class StringBuilderPalindrome {
+    public static void main(String[] args) {
+        String str = "madam";
+		System.out.println("input befor: " + str);
+
+        StringBuilder sb = new StringBuilder(str);
+        String rev = sb.reverse().toString();
+
+        if (str.equals(rev)) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
+        }
+		System.out.println("Input after: " + rev);
+    }
+}
