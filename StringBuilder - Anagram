@@ -1,0 +1,31 @@
+import java.util.Arrays;
+
+public class StringBuilderAnagram {
+    public static void main(String[] args) {
+        String str1 = "listen";
+        String str2 = "silent";
+
+        // Convert to StringBuilder
+        StringBuilder sb1 = new StringBuilder(str1.toLowerCase());
+        StringBuilder sb2 = new StringBuilder(str2.toLowerCase());
+
+        // Convert to char array for sorting
+        char[] arr1 = sb1.toString().toCharArray();
+        char[] arr2 = sb2.toString().toCharArray();
+
+		System.out.println(arr1);
+		System.out.println(arr2);
+
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+		System.out.println(arr1);
+		System.out.println(arr2);
+
+        if (Arrays.equals(arr1, arr2)) {
+            System.out.println("Anagram");
+        } else {
+            System.out.println("Not Anagram");
+        }
+    }
+}
