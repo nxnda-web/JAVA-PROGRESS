@@ -1,0 +1,30 @@
+import java.util.Arrays;
+
+public class StringAnagram {
+    public static void main(String[] args) {
+        String str1 = "dcba";
+        String str2 = "Nanda";
+
+        // Convert to lowercase
+        str1 = str1.toLowerCase();
+        str2 = str2.toLowerCase();
+
+        // Convert to char array
+        char[] arr1 = str1.toCharArray();
+        char[] arr2 = str2.toCharArray();
+
+        // Sort arrays
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+		System.out.println(arr1);
+		System.out.println(arr2);
+
+        // Compare
+        if (Arrays.equals(arr1, arr2)) {
+            System.out.println("Anagram");
+        } else {
+            System.out.println("Not Anagram");
+        }
+    }
+}
