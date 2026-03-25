@@ -1,0 +1,79 @@
+public class OOPs1{
+public class Vehicle {
+    public void start() {
+        System.out.println("Vehicle is starting");
+    }
+
+    public void drive() {
+        System.out.println("Vehicle is driving");
+    }
+    public void stop() {
+        System.out.println("Vehicle is stopping");
+    }
+    
+}
+public class bycycle extends Vehicle{
+    public void start(){
+        System.out.println("open the lock then drive");
+    }
+    public void drive(){
+        System.out.println("drive the cycle with pedal");
+    }
+    public void stop(){
+        System.out.println("Stop with the break");
+    }
+}
+public class bike extends Vehicle{
+    public void start(){
+        System.out.println("start the bike with self or kiker");
+    }
+    public void drive (){
+        System.out.println("rise the accelator");
+    }
+    public void stop(){
+        System.out.println("stop the bike by break");
+    }
+}
+public class Java42fj extends bike {
+    public void start(){
+        System.out.println("start with only self");
+    }
+    public void drive(){
+        System.out.println("drive the bike smoothly");
+    }
+}
+public class car extends Vehicle {
+    public void start(){
+        System.out.println("insert and turn the key to start");
+    }
+    public void drive(){
+        System.out.println("drive by relasing and pressing the accelarator");
+    }
+    public void stop(){
+        System.out.println("reduce the gear and turn off the key");
+    }
+    public void reverse(){
+        System.out.println("put the gear on reverse and releae the clutch");
+    }
+}
+public class RolceRoyce extends car {
+    public void start(){
+        System.out.println("RolceRoyce start impli");
+    }
+    public void drive(){
+        System.out.println("when drive feels lux");
+    }
+}
+public class TestVehicle{
+    public static void main(int[] args){
+        System.out.println("Main () Overload");
+    }
+    public void main(String[] args){
+        car b = new RolceRoyce();  //LSP - Liskov Substition Principle
+        b.start();
+        b.drive();
+        b.stop();
+        
+    }
+}
+}
